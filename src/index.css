@@ -1,0 +1,253 @@
+@import url("https://use.typekit.net/myj5oak.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #272722;
+}
+
+
+div#root{
+  position: relative;
+  overflow: hidden;
+}
+
+:focus {
+  outline: none;
+  }
+
+a{
+  color: #272727;
+}
+
+a:hover{
+  text-decoration: none;
+
+}
+
+::selection {
+  background: #272727;
+  color: #fff;
+}
+
+
+.Mapoverlay{
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(0,0,0,0.6);
+  z-index: 3;
+  width: calc(100% - 10px);
+  background-color: rgba(12, 12, 12, 0.9);
+  /* :rgba(0,0,0,0.3); */
+}
+
+.Mapoverlay>*{
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.Mapoverlay h1{
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 1px;
+ }
+
+.Mapoverlay h2{
+  display: inline;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+
+
+
+div.map-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: #fff;
+}
+
+
+  
+section.about{
+    max-width: 62ch;
+    min-height: 100vh;
+    margin: 0 7.5vw;
+    padding: 7.5vw 0;
+    line-height: 1.4;
+    font-size: 1em;
+}
+
+p{
+  margin-bottom: 1em;
+}
+
+span.lede{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+div.contributors{
+  padding-top: calc(7.5vw/2);
+}
+
+.contributors h3{
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.contributors ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media(min-width: 660px){
+  .contributors-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+
+/* Site Footer */
+
+.flex{
+  display: flex;
+}
+
+
+.page{
+    margin-bottom: 70vh;
+    z-index: 0;
+    background: #fff;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: 70vh;
+    width: 100vw;
+    background-color: #121212;
+    z-index: -10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.site-info{
+    max-width: 400px;
+    margin: 7.5vw;
+    /* margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    padding-bottom: 7.5vw; */
+}
+
+
+.mc-field-group{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+#mc_embed_signup_scroll h2{
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-size: 1.61rem;
+}
+
+.mm-name>*{
+  width: 50%;
+}
+
+@media (max-width: 460px){
+  .mm-name>*{
+    width: 100%;
+  }
+
+  .flex{
+    display: block !important;
+  }
+
+  #mc_embed_signup_scroll h2{
+    font-size: 24px;
+  }
+
+}
+
+#mce-EMAIL{
+  width: 100%
+}
+
+
+
+input{
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.button{
+    margin-top: 38px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    cursor: pointer;
+    color: #fff;
+}
+
+::-webkit-input-placeholder, textarea { /* Edge */
+    color: #fff;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::placeholder {
+    color: #fff;
+  }
+
+  textarea:focus, input:focus,
+  input, select, textarea {
+    color: #9cf2ff;
+}
+

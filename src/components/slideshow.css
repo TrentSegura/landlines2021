@@ -1,0 +1,95 @@
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+    border-bottom: .5px solid rgb(40, 40, 40);
+    padding-bottom: 5px;
+}
+
+
+.carousel .carousel__item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel__item--visible,
+.image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 66.66%;
+}
+
+.carousel .carousel__item--visible img.image,
+.image-container img.image{
+      position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel__actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__actions button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#carousel__actions--prev{
+    margin-left: 40px;
+}
+
+#carousel__actions--next{
+    margin-right: 40px;
+}
+
+
+/* modal */
+/* .modal{
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.25s ease-out;
+}
+
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img{
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    transition: all 0.25s ease-out;
+}
+
+.full-img.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal p{
+    color: #fff;
+    font-size: 1.65rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+ */
